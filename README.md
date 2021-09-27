@@ -14,7 +14,7 @@
 * cd backend/
 * docker-compose up -d
 
-Obs. nessessário ter o docker e o docker-compose instalados;
+Obs. necessário ter o docker e o docker-compose instalados;
 
 
 
