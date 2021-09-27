@@ -17,6 +17,8 @@
 Obs. necessário ter o docker e o docker-compose instalados;
 
 ### Scripts para criação do banco e tabelas sem o docker
+#### Expor na porta 3306
+
 
 CREATE DATABASE IF NOT EXISTS officematerial;
 USE officematerial;
