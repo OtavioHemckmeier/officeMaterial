@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-subtitle>
+        Tem certeza que deseja aprovar?
+    </mat-card-subtitle>
+
+    <mat-form-field>
+        <input matInput name="comentario" placeholder="Observação" [(ngModel)]="observacao">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="aprove()">
+        Aprovar
+    </button>
+    <button mat-raised-button routerLink="/list" color="warn">
+        Cancelar
+    </button>
+</mat-card>

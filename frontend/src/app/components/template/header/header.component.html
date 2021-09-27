@@ -1,0 +1,14 @@
+<mat-toolbar class="header mat-elevation-z3">
+    <span style="display: flex;justify-content: center">
+        <a>
+            <img class="logo" src="assets/logo.jpeg" alt="Logo">
+        </a>
+    </span>
+
+    <span *ngIf="!isLogged" class="actions" routerLink="/register">
+        <i class="material-icons icon">app_registration</i>
+    </span>
+    <span *ngIf="isLogged" (click)="logout()" class="actions">
+        <i class="material-icons icon">logout</i>
+    </span>
+</mat-toolbar>

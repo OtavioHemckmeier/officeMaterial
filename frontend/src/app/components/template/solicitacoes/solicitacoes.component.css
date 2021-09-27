@@ -1,0 +1,10 @@
+.contentForm {
+    display: grid;
+}
+.menuOpen{
+    padding-left: 230px;
+}
+
+.menuClose{
+    padding-left: 70px;
+}

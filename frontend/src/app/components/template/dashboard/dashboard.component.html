@@ -1,0 +1,27 @@
+{{verifyUserLogged()}}
+<mat-sidenav-container *ngIf="isLogged" class="container">
+    <mat-sidenav class="sidenav" mode="side" opened
+                 fixedInViewport="true" fixedTopGap="64">
+        <div class="infoProfile">
+            <i class="material-icons userIcon">
+                account_circle
+            </i>
+        </div>
+
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/list">
+                <i class="material-icons">
+                    home
+                </i>
+            </a>
+            <a *ngIf="userType === 'Solicitante'" mat-list-item routerLink="/solicitations">
+                <i class="material-icons">
+                    inventory_2
+                </i>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

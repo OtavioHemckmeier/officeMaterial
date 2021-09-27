@@ -1,0 +1,30 @@
+.containerLogin {
+    width: 300px;
+    margin: 40px auto auto;
+}
+
+.containerLogin .headerLogin {
+    text-align: center;
+}
+
+.containerLogin .form {
+    display: grid;
+    margin-top: 15px;
+}
+.containerLogin .icon {
+    font-size: 50px;
+}
+
+.containerLogin .footerRegister {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.containerLogin .footerRegister a {
+    cursor: pointer;
+}
+
+.containerLogin .footerRegister a:hover {
+    text-decoration: underline;
+    color: #4141ff;
+}

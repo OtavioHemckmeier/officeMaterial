@@ -1,0 +1,29 @@
+<mat-card>
+
+    <mat-card-subtitle>
+        Adicionar Solicitação
+    </mat-card-subtitle>
+
+    <form class="form" id="createSolicitacao">
+        <div class="contentForm">
+            <mat-form-field>
+                <input required [(ngModel)]="data.nomeSolicitante" name="nomeSolicitante" matInput
+                       placeholder="Nome do solicitante">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input type="number" required [(ngModel)]="data.preco" name="preco" matInput placeholder="Preço">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input required [(ngModel)]="data.descricao" name="descricao" matInput placeholder="Descrição">
+            </mat-form-field>
+
+
+            <button mat-raised-button color="primary" (click)="registerSolicitacao()">
+                Inserir
+            </button>
+        </div>
+    </form>
+
+</mat-card>

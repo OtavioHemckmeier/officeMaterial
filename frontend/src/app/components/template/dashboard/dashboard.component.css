@@ -1,0 +1,35 @@
+.sidenav {
+    background: rgb(115,206,247);
+    background: radial-gradient(circle, rgba(115,206,247,1) 0%, rgba(0,113,165,1) 100%);
+    width: 56px;
+}
+
+.sidenav .textMenu {
+    margin-left: 10px;
+}
+
+.sidenav a {
+    color: #FFF;
+}
+
+.content {
+    padding: 16px;
+    background-color: #FFF;
+}
+
+.sidenav .infoProfile {
+    text-align: center;
+    background-color: #00000038;
+    color: aquamarine;
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+}
+
+.sidenav .infoProfile .userType {
+    font-size: 11px;
+}
+
+.sidenav .infoProfile .userIcon {
+    font-size: 35px;
+}

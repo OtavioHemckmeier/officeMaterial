@@ -1,0 +1,37 @@
+<mat-card class="containerLogin mat-elevation-z3" xmlns="">
+    <div class="headerLogin">
+        <i class="material-icons icon">app_registration</i>
+    </div>
+    <mat-card-title class="headerLogin">
+        Criar uma conta
+    </mat-card-title>
+    <form class="form" id="createUser">
+        <mat-form-field>
+            <mat-select [(ngModel)]="dataUser.userType" name="userType" placeholder="Grupo do usuário">
+                <mat-option *ngFor="let grupo of grupos" [value]="grupo.value">
+                    {{grupo.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input required [(ngModel)]="dataUser.name" name="name" matInput placeholder="Seu nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input required type="email" [(ngModel)]="dataUser.email" name="email" matInput placeholder="Email">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input required minlength="7" type="password" [(ngModel)]="dataUser.password" name="password" matInput placeholder="Senha">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="registerUser()">
+            Registrar
+        </button>
+
+        <mat-card-subtitle class="footerRegister">
+            Já possui uma conta? <a routerLink="/login">Clique aqui</a> e faça seu login!
+        </mat-card-subtitle>
+    </form>
+</mat-card>

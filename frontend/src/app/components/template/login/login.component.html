@@ -1,0 +1,24 @@
+<mat-card class="containerLogin mat-elevation-z3">
+    <div class="headerLogin">
+        <i class="material-icons icon">person</i>
+    </div>
+    <mat-card-title class="headerLogin">
+        Acesse sua conta
+    </mat-card-title>
+    <form class="form" id="createUser">
+        <mat-form-field>
+            <input matInput name="email" type="email" placeholder="Email" [(ngModel)]="login.email">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="password" name="password" placeholder="Senha" [(ngModel)]="login.password">
+        </mat-form-field>
+
+        <button mat-raised-button (click)="sendLogin()" color="primary">
+            Entrar
+        </button>
+        <mat-card-subtitle class="footerRegister">
+            Não possui uma conta? <a routerLink="/register">Clique aqui</a> e faça seu cadastro!
+        </mat-card-subtitle>
+    </form>
+</mat-card>
