@@ -4,7 +4,7 @@
 * cd frontend/
 * npm i
 * npm start
-* 
+
 http://localhost:4200/login
 
 ### Iniciar o backend
